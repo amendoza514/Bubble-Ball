@@ -10,7 +10,7 @@
 
 Players can target clusters of targets with the same color of the current projectile loaded (projectile previews are visible at the turret) to destroy multiple at the same time. Targets that are completely isolated from other targets as a result of a shot are rewarded as 'free throws' and dropped from the court for free points.
 
-Additionally, players can choose from "LeBron James" or "Steph Curry" player types that grant additional abilities. These abilities allow a user to utilize either a built in aiming reticle for more precise shooting (Curry), or the chance for *AND - 1* free target hits anywhere on the map following any successful shot (LeBron).
+Additionally, players can choose from "LeBron James" or "Steph Curry" player types that grant additional abilities. These abilities allow a user to utilize either a built in aiming reticle for more precise shooting (Curry), or the chance for an *AND - 1* free target hit anywhere on the map following any successful shot (LeBron).
 
 Check out the [live demo](https://amendoza514.github.io/) if you are interested!
 
