@@ -154,12 +154,12 @@ Players that selected the *Steph Curry* ability can also utilize an extended ver
 ## Technologies Used
 
  - JavaScript
- - HTML Canvas
+ - HTML5 Canvas
  - SCSS / CSS
  - howler.js
 
 ## Future Implementations
 
- - Firebase DB for global leaderboard / highscore element
+ - Global leaderboard / highscore element stored in Firebase DB
  - Improved 2D Raycasting element to have aim reticle 'bounce' off of walls and show more fluid projectile trajectory paths.
  - Improved collision detection that results in fewer less dropped shots.
