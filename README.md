@@ -114,7 +114,7 @@ I chose to expand on basic 2D circle detection logic for my primary game mechani
 Objects that have collided then get sent to a separate custom algorithm that allows for chain-reaction collisions to 'pop' surrounding targets/projectile based on valid location data and various collision related flags that now live in the targets/projectiles. These collisions and cluster chain-reaction checks are being rendered on every animation frame to allow for fluid gameplay.
 
 ### Turret Swivel and Projectile Fire Trajectory 
-In order to track turret movement and projectile fire I seeded live mouse position coordinates from the HTML Canvas element to influence subsequent repaints of the turret object [x, y]  endpoints, resulting in a rectangle canvas element that follows the players' mouse in real time. The turret then passes new Projectile objects with these coordinates and slope characteristics to render new projectiles in the correct travel path.
+In order to track turret movement and projectile fire I seed live mouse position coordinates from the HTML Canvas element to influence subsequent repaints of the turret object [x, y]  endpoints, resulting in a rectangle canvas element that follows the players' mouse in real time. The turret then passes new Projectile objects with these coordinates and slope characteristics to render new projectiles in the correct travel path.
 
 Players that selected the *Steph Curry* ability can also utilize an extended version of the mouse tracking turret, which gives players a visual aim reticle to guide shot placement (represented by the *cheatX* and *cheatY* attributes below).
 
