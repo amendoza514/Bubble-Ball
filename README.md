@@ -1,6 +1,6 @@
 # Bubble Ball!
 
-*Bubble Ball!* (https://amendoza514.github.io/) is an arcade-styled shooter/puzzle game that leverages varied custom collision detection patterns to reward accurate shot placement by players. No libraries (other than howler.js for reliable audio interactivity across browsers) were used in the creation of this Javascript and Canvas only project.
+*Bubble Ball!* (https://amendoza514.github.io/) is an arcade-styled puzzle game that leverages varied custom collision detection patterns to reward accurate shot placement by players. No additional libraries (with the exception of howler.js, for reliable audio interactivity across browsers) were used in the creation of this Javascript and HTML Canvas only project.
 
 <img width="550" alt="Screen Shot 2020-08-12 at 1 08 28 PM" src="https://user-images.githubusercontent.com/62665796/90070783-45643400-dca9-11ea-9c97-04edca6fe3d4.png">
 
@@ -10,7 +10,7 @@
 
 Players can target clusters of targets with the same color of the current projectile loaded (projectile previews are visible at the turret) to destroy multiple at the same time. Targets that are completely isolated from other targets as a result of a shot are rewarded as 'free throws' and dropped from the court for free points.
 
-Additionally, players can choose from "LeBron James" or "Steph Curry" player types that grant additional abilities. These abilities allow a user to utilize either a built in aiming reticle for more precise shooting (Curry), or the chance for *AND - 1* free target hits anywhere on the map following any successful shot (LeBron).
+Additionally, players can choose from "LeBron James" or "Steph Curry" player types that grant additional abilities. These abilities allow a user to utilize either a built in aiming reticle for more precise shooting (Curry), or the chance for an *AND - 1* free target hit anywhere on the map following any successful shot (LeBron).
 
 Check out the [live demo](https://amendoza514.github.io/) if you are interested!
 
@@ -111,10 +111,10 @@ I chose to expand on basic 2D circle detection logic for my primary game mechani
 	    }
 	}
 
-Objects that have collided then get sent to a separate custom algorithm that allows for collisions to 'pop' surrounding targets/projectile based on valid location data and various collision related flags that now live in the targets/projectiles. These collisions and cluster chain-reaction checks are being rendered on every animation frame to allow for fluid gameplay.
+Objects that have collided then get sent to a separate custom algorithm that allows for chain-reaction collisions to 'pop' surrounding targets/projectile based on valid location data and various collision related flags that now live in the targets/projectiles. These collisions and cluster chain-reaction checks are being rendered on every animation frame to allow for fluid gameplay.
 
 ### Turret Swivel and Projectile Fire Trajectory 
-In order to track turret movement and projectile fire I seeded live mouse position coordinates from the HTML Canvas element to influence subsequent repaints of the turret object [x, y]  endpoints, resulting in a rectangle canvas element that follows the players' mouse in real time. The turret then passes new Projectile objects with these coordinates and slope characteristics to render new projectiles in the correct travel path.
+In order to track turret movement and projectile fire I seed live mouse position coordinates from the HTML Canvas element to influence subsequent repaints of the turret object [x, y]  endpoints, resulting in a rectangle canvas element that follows the players' mouse in real time. The turret then passes new Projectile objects with these coordinates and slope characteristics to render new projectiles in the correct travel path.
 
 Players that selected the *Steph Curry* ability can also utilize an extended version of the mouse tracking turret, which gives players a visual aim reticle to guide shot placement (represented by the *cheatX* and *cheatY* attributes below).
 
@@ -154,12 +154,12 @@ Players that selected the *Steph Curry* ability can also utilize an extended ver
 ## Technologies Used
 
  - JavaScript
- - HTML Canvas
+ - HTML5 Canvas
  - SCSS / CSS
  - howler.js
 
 ## Future Implementations
 
- - Firebase DB for global leaderboard / highscore element
+ - Global leaderboard / highscore element stored in Firebase DB
  - Improved 2D Raycasting element to have aim reticle 'bounce' off of walls and show more fluid projectile trajectory paths.
  - Improved collision detection that results in fewer less dropped shots.
